@@ -1,0 +1,10 @@
+#   Ignore text files
+*.txt
+*.dat
+*.seg
+
+#   Ignore Python precompiled files
+*.pyc
+
+#   Ignore binary files
+*.bin
