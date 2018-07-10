@@ -8,28 +8,50 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<title>地图导航</title>
-	<!--部署版本-->
-	<style type="text/css" media="screen">@import url("{{ url_for('static', filename='style.css')}}");</style>
-	<!--script type='text/javascript' src="{{ url_for('static', filename='guide.js')}}"></script-->
-	<script type="application/javascript">
-		document.write("<script type='text/javascript' src='" + "{{ url_for('static', filename='main.js')}}" + "?" + Math.floor(Math.random() * 1000000) + "'><" + "/script>");
-		document.write("<style type='text/css' media='screen'>@import url(" + "{{ url_for('static', filename='style.css')}}" + "?" + Math.floor(Math.random() * 1000000) + ");</style>"); 
-	</script>
+    <meta charset="UTF-8">
+    <title>地图导航</title>
+    <!--部署版本-->
+    <style type="text/css" media="screen">
+        @import url("{{ url_for('static', filename='css/bootstrap.min.css')}}");
+    </style>
+    <!--script type='text/javascript' src="{{ url_for('static', filename='guide.js')}}"></script-->
+    <script type="application/javascript">
+        document.write("<script type='text/javascript' src='" + "{{ url_for('static', filename='main.js')}}" + "?" + Math.floor(Math.random() * 1000000) + "'><" + "/script>");
+        document.write("<style type='text/css' media='screen'>@import url(" + "{{ url_for('static', filename='style.css')}}" + "?" + Math.floor(Math.random() * 1000000) + ");</style>"); 
+    </script>
 </head>
 
 <body>
-    <div class="doc_holder">
-        <form id="nform" action="/addpoint" method="post">
-            <input type="text" class="input_title" name="node_type" id="node_type" value="title">
-            <br>
-            <input type="text" class="input_doc" name="node_num" id="node_num" value="content">
-            <br>
-            <input type="button" name="btn_submit" id="btn_submit" value="提交">
-            <br>
-        </form>
-	</div>
+    <div class="container-fluid">
+        <div class="row-fluid">    
+            <div class="span10">
+                <div class="input-prepend">
+                    <div class="btn-group">
+                        <button class="btn dropdown-toggle" data-toggle="dropdown">
+                            Action
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            ...
+                        </ul>
+                    </div>
+                    <input class="span10" id="prependedDropdownButton" type="text">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--div class="container">
+        <div class="doc_holder">
+            <form id="nform" action="/addpoint" method="post">
+                <input type="text" class="input_title" name="node_type" id="node_type" value="title">
+                <br>
+                <input type="text" class="input_doc" name="node_num" id="node_num" value="content">
+                <br>
+                <input type="button" class="input_button" name="btn_submit" id="btn_submit" value="提交">
+                <br>
+            </form>
+        </div>
+    </div-->
 </body>
 
 </html>
