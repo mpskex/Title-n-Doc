@@ -1,8 +1,9 @@
 #coding: utf-8
 import numpy as np
 
-""" Calculating distance between two sets
-
+""" 
+Calculating distance between two sets
+    mpskex @ github
 """
 
 def euclid_dist(pa, pb):
