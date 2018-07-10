@@ -17,3 +17,6 @@ data_cache/
 
 #   Ignore list file
 *.list
+
+#   Ignore TrueType file
+*.ttf

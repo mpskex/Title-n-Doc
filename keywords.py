@@ -14,6 +14,10 @@ Python version of
 Keyword extraction by entropy difference between the intrinsic and extrinsic mode
 Last modified by mpskex (Liu Fangrui) (2018-07-04)
 """
+class ParsingException(Exception):
+    def __init__(self, err):
+        Exception.__init__(self, err)
+
 
 
 def remove_stop(text):
@@ -57,6 +61,8 @@ def clean_words(text, language='English'):
         text = pseg.lcut(text)
     else:
         raise NotImplementedError
+    if text is [] or text is None:
+        raise ParsingException("No Chinese Detected")
     return text
 
 

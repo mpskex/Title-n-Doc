@@ -8,6 +8,19 @@
  * Designed and built with all the love in the world by @mdo and @fat.
  */
 
+/*
+Custom
+*/
+.header
+{
+  min-height: 100px;
+}
+
+.logotxt
+{
+ margin: 0 auto;
+}
+
 .clearfix {
   *zoom: 1;
 }

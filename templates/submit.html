@@ -1,0 +1,61 @@
+<!doctype html>
+<!--/*
+#	mpsk
+#	Beijing University of Technology
+#	Copyright 2017
+*/
+-->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>==[结果]标题党检验!!==</title>
+    <!--部署版本-->
+    <!--style type="text/css" media="screen">
+        @import url("{{ url_for('static', filename='css/bootstrap.css')}}");
+    </style-->
+    <script type="application/javascript">
+        document.write("<script type='text/javascript' src='" + "{{ url_for('static', filename='js/main.js')}}" + "?" + Math.floor(Math.random() * 1000000) + "'><" + "/script>");
+        document.write("<style type='text/css' media='screen'>@import url(" + "{{ url_for('static', filename='css/bootstrap.css')}}" + "?" + Math.floor(Math.random() * 1000000) + ");</style>"); 
+    </script>
+    <script type='text/javascript' src="{{ url_for('static', filename='js/main.js')}}"></script>
+</head>
+
+<body onload="genExp()">
+    <div class="header" style="background-image: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1531243429501&di=5e060f4d4af24d78943c7a089e380b28&imgtype=0&src=http%3A%2F%2Fhiphotos.baidu.com%2Fshitenhouji%2Fmpic%2Fitem%2F616d6944babcfba6b3b7dc3a.jpg)">
+        <div class="col-xs-12">
+            <div class="logotxt">
+                <h1 style="text-align:center;padding:30px;color:aliceblue">对标题党宝具</h1>
+            </div>
+        </div>
+    </div>
+    <div class="form-horizontal" style="background-image: url(http://image.youzhan.org/d/dd/2de797545de56274f03a5920eb3a1.jpg)">
+        <div class="container-fluid">
+            <div class="span5" style="background-color: #ff808060;">
+                <div class="span4">
+                    <h2>平均矢量度量</h2>
+                    <p style="font-size: 16px">
+                        我们将词汇建模，将汉语词汇变成向量。在这里我们使用了Google的word2vec来构架词向量。之后对于词向量我们只是简单的进行了求平均并度量相应距离。
+                    </p>
+                </div>
+                <div class="span4">
+                    <h2>Hausdorff距离度量</h2>
+                    <p>
+                        Hausdorff距离是用来度量几何体之间的距离的。一般可也以用来度量集合之间的距离。但是由于向量的不连续与不光滑性，该算法不一定能获得最好的效果。
+                    </p>
+                </div>
+            </div>
+            <div class="span7" style="color:aliceblue;background-color: #1500635f;">
+                <p>标题与文章的距离有</p>
+                <h1 id="dist">{{ result|safe }}</h1>
+                <p>也就是说：</p>
+                <p id="explain" style="font-size: 36px; line-height:200%"></p>
+                <div align="center" style="padding: 40px">
+                    <a href="/index" style="font-size: 18px;color: #bccbbe">返回首页</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
