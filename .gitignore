@@ -15,7 +15,5 @@ data_cache/
 #   Ignore Temporary files
 *.tmp
 
-#   Ignore test files
-test_model.py
-seg_module_test.py
-build_model.py
+#   Ignore list file
+*.list

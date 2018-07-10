@@ -14,7 +14,7 @@ iter_num = 1000
 
 
 cache_dir = "data_cache/"
-record_list_fname = "record.list"
+record_list_fname = "record.list.txt"
 # name = "news_sohusite_xml.smarty.dat"
 name = "news_sohusite_xml_utf8.dat"
 # name = "SogouCS.WWW08.txt"

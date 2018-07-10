@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/*
+#	mpsk
+#	Beijing University of Technology
+#	Copyright 2017
+*/
+
+/*
+doc holder
+*/
+.doc_holder
+{
+    position: absolute;
+    top: 100px; left: 100px;
+}
+.input_title{
+    width: 400px;
+}
+.input_doc{
+    height: 300px;
+    width: 400px;
+}

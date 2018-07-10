@@ -13,7 +13,7 @@ Preparing segmented data for feeding words to the word2vec module
 """
 
 cache_dir = "data_cache/"
-record_list_fname = "record.list"
+record_list_fname = "record.list.txt"
 
 
 class w2v_model():
